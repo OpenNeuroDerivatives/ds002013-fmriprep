@@ -1,0 +1,128 @@
+_command_array:
+- code/containers/scripts/singularity_cmd run code/containers/images/bids/bids-fmriprep--22.0.0.sing
+  sourcedata/raw /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/fmriprep/ds002013-fmriprep
+  participant --participant-label 'AAA02' -w '/scratch1/03201/jbwexler/work_dir/fmriprep/ds002013_sub-AAA02'
+  -vv --output-spaces MNI152NLin2009cAsym:res-2 anat func fsaverage5 --nthreads 14
+  --omp-nthreads 7 --skip-bids-validation --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --use-aroma --ignore slicetiming --output-layout bids --cifti-output --resource-monitor
+  --skull-strip-t1w skip --mem_mb 37500 --bids-database-dir /tmp --md-only-boilerplate
+  --use-syn-sdc warn
+- code/containers/scripts/singularity_cmd run code/containers/images/bids/bids-fmriprep--22.0.0.sing
+  sourcedata/raw /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/fmriprep/ds002013-fmriprep
+  participant --participant-label 'AAA03' -w '/scratch1/03201/jbwexler/work_dir/fmriprep/ds002013_sub-AAA03'
+  -vv --output-spaces MNI152NLin2009cAsym:res-2 anat func fsaverage5 --nthreads 14
+  --omp-nthreads 7 --skip-bids-validation --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --use-aroma --ignore slicetiming --output-layout bids --cifti-output --resource-monitor
+  --skull-strip-t1w skip --mem_mb 37500 --bids-database-dir /tmp --md-only-boilerplate
+  --use-syn-sdc warn
+- code/containers/scripts/singularity_cmd run code/containers/images/bids/bids-fmriprep--22.0.0.sing
+  sourcedata/raw /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/fmriprep/ds002013-fmriprep
+  participant --participant-label 'AAX01' -w '/scratch1/03201/jbwexler/work_dir/fmriprep/ds002013_sub-AAX01'
+  -vv --output-spaces MNI152NLin2009cAsym:res-2 anat func fsaverage5 --nthreads 14
+  --omp-nthreads 7 --skip-bids-validation --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --use-aroma --ignore slicetiming --output-layout bids --cifti-output --resource-monitor
+  --skull-strip-t1w skip --mem_mb 37500 --bids-database-dir /tmp --md-only-boilerplate
+  --use-syn-sdc warn
+- code/containers/scripts/singularity_cmd run code/containers/images/bids/bids-fmriprep--22.0.0.sing
+  sourcedata/raw /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/fmriprep/ds002013-fmriprep
+  participant --participant-label 'AAX02' -w '/scratch1/03201/jbwexler/work_dir/fmriprep/ds002013_sub-AAX02'
+  -vv --output-spaces MNI152NLin2009cAsym:res-2 anat func fsaverage5 --nthreads 14
+  --omp-nthreads 7 --skip-bids-validation --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --use-aroma --ignore slicetiming --output-layout bids --cifti-output --resource-monitor
+  --skull-strip-t1w skip --mem_mb 37500 --bids-database-dir /tmp --md-only-boilerplate
+  --use-syn-sdc warn
+_container_command_str: code/containers/scripts/singularity_cmd run code/containers/images/bids/bids-fmriprep--22.0.0.sing
+  sourcedata/raw /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/fmriprep/ds002013-fmriprep
+  participant --participant-label '{p[sub]}' -w '/scratch1/03201/jbwexler/work_dir/fmriprep/ds002013_sub-{p[sub]}'
+  -vv --output-spaces MNI152NLin2009cAsym:res-2 anat func fsaverage5 --nthreads 14
+  --omp-nthreads 7 --skip-bids-validation --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --use-aroma --ignore slicetiming --output-layout bids --cifti-output --resource-monitor
+  --skull-strip-t1w skip --mem_mb 37500 --bids-database-dir /tmp --md-only-boilerplate
+  --use-syn-sdc warn
+_dataset_id: ff1706a2-8722-4d0e-99b9-971e2340087b
+_extra_inputs: &id001
+- code/containers/images/bids/bids-fmriprep--22.0.0.sing
+_extra_inputs_array:
+- *id001
+- *id001
+- *id001
+- *id001
+_head: 0dd1870dc75ca9682a6dc7f6496d3137117768c5
+_inputs_array: []
+_jobid: 20220816-001421-2ff8
+_meta_directory: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/fmriprep/ds002013-fmriprep/.reproman/jobs/local/20220816-001421-2ff8
+_meta_directory_rel: .reproman/jobs/local/20220816-001421-2ff8
+_num_subjobs: 4
+_outputs_array: []
+_reproman_version: 0.4.1
+_resolved_batch_parameters:
+- sub: AAA02
+- sub: AAA03
+- sub: AAX01
+- sub: AAX02
+_resolved_command_str: sourcedata/raw /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/fmriprep/ds002013-fmriprep
+  participant --participant-label '{p[sub]}' -w '/scratch1/03201/jbwexler/work_dir/fmriprep/ds002013_sub-{p[sub]}'
+  -vv --output-spaces MNI152NLin2009cAsym:res-2 anat func fsaverage5 --nthreads 14
+  --omp-nthreads 7 --skip-bids-validation --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --use-aroma --ignore slicetiming --output-layout bids --cifti-output --resource-monitor
+  --skull-strip-t1w skip --mem_mb 37500 --bids-database-dir /tmp --md-only-boilerplate
+  --use-syn-sdc warn
+_spec_version: '1.0'
+_submission_id: null
+batch_parameters:
+- sub=AAA02,AAA03,AAX01,AAX02
+command:
+- sourcedata/raw
+- /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/fmriprep/ds002013-fmriprep
+- participant
+- --participant-label
+- '{p[sub]}'
+- -w
+- /scratch1/03201/jbwexler/work_dir/fmriprep/ds002013_sub-{p[sub]}
+- -vv
+- --output-spaces
+- MNI152NLin2009cAsym:res-2
+- anat
+- func
+- fsaverage5
+- --nthreads
+- '14'
+- --omp-nthreads
+- '7'
+- --skip-bids-validation
+- --notrack
+- --fs-license-file
+- /home1/03201/jbwexler/.freesurfer.txt
+- --use-aroma
+- --ignore
+- slicetiming
+- --output-layout
+- bids
+- --cifti-output
+- --resource-monitor
+- --skull-strip-t1w
+- skip
+- --mem_mb
+- '37500'
+- --bids-database-dir
+- /tmp
+- --md-only-boilerplate
+- --use-syn-sdc
+- warn
+container: code/containers/bids-fmriprep
+job_name: ds002013-fmriprep
+killjob_factors: .85,.25
+launcher: 'true'
+local_directory: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/fmriprep/ds002013-fmriprep
+mail_type: END
+mail_user: jbwexler@tutanota.com
+num_nodes: '1'
+num_processes: '4'
+orchestrator: datalad-no-remote
+queue: small
+resource_id: bc1235e8-b28c-11eb-bce1-e4434b618f52
+resource_name: local
+root_directory: /home1/03201/jbwexler/.reproman/run-root
+submitter: slurm
+walltime: '48:00:00'
+working_directory: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/fmriprep/ds002013-fmriprep
